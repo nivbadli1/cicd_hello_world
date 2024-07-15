@@ -3,7 +3,7 @@ name: Hello World CI/CD Use artifact
 on:
   push:
     branches:
-      - main
+      - dev
 
 jobs:
   build:
@@ -17,7 +17,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: hello-artifact
-          path: timestamped_hello.txt
+          path: ./timestamped_hello.txt
 
   use-artifact:
     needs: build
