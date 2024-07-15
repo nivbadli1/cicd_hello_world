@@ -3,7 +3,7 @@ name: Hello World CI/CD Use artifact
 on:
   push:
     branches:
-      - prod
+      - main
 
 jobs:
   build:
